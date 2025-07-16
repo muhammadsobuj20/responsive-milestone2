@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+
+
+/* simple website layout */
 .header,
 .navbar,
 .main,
@@ -61,17 +64,32 @@
  background-color: rgb(124, 4, 194);
 }
 
-.wrapper-container {
+.wrapper-container3{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-.box {
-  background-color: rgba(104, 105, 102, 0.514);
-  padding: 15px;
+  grid-template-rows: repeat(3, 200px)40px 40px;
+   gap: 10px;
+  /* padding: 10px; */
 }
 
-.box1 {
-  display: grid;
-  grid-row: 200px;
+.box{
+background-color: rgba(85, 107, 47, 0.281);
+padding: 12px;
+border-radius: 6px;
+}
+
+#box-1{
+  /* display: grid; */
+  grid-row: span 5;
+  /* grid-column: span 5; */
+}
+
+#box-11, #box-12{
+   /* display: grid; */
+  grid-column: span 3;
+  /* grid-row: span 3; */
+}
+
+#box-6, #box-7, #box-9, #box-10{
+background-color: chartreuse;
 }
